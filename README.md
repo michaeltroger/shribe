@@ -34,4 +34,5 @@ A project by Valentin Kuba, Sebastian Schmid & Michael Troger.
     };
     ```
 
-Launch: `npm start`
+###Launch: 
+`npm start`
