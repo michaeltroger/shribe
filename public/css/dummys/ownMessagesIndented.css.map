@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,+CAAgD;EAC9C,YAAY,EAAE,GAAG",
+"sources": ["ownMessagesIndented.scss"],
+"names": [],
+"file": "ownMessagesIndented.css"
+}

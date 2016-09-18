@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Shribe - Login</title>
+    <% include ../partials/head %>
+    <!-- general meta data, css files -->
+    <link rel="stylesheet" href="files/css/landing.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div id="landing">
+            <div id="landingContent">
+                <h1>
+                    <img src="../files/icons/pencil_icon.png" alt="write a text message">
+                    <span class="shribe">shribe</span>
+                </h1>
+
+                <!-- show any messages that come back with authentication -->
+                <% if (message.length > 0) { %>
+                <div class="alert alert-danger"><%= message %></div>
+                <% } %>
+
+                <!-- LOGIN FORM -->
+                <form class="form-inline" action="/" method="post">
+                    <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <input type="email" class="form-control input-lg" name="email" placeholder="Email" maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Password</label>
+                        <input type="password" class="form-control input-lg" name="password" placeholder="Password" maxlength="200">
+                    </div>
+
+                    <button type="submit" class="btn btn-default btn-lg">Login</button>
+                </form>
+                <p>Need an account? <a href="/signup">Signup</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- END ROW -->
+    <footer>
+        <% include ../partials/footer %>
+        <!-- jquery and general script file -->
+    </footer>
+</div>
+<!-- END CONTAINER -->
+</body>
+</html>

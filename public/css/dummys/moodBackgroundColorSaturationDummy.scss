@@ -1,0 +1,15 @@
+#users, #conversation {
+  color:white;
+}
+
+// mood influences the saturation of a wished basic color
+$num: 10;
+@for $i from -10 to $num {
+  .mood#{$i} {
+    // saturation of the wished color from bright to dark
+    //background-color: rgba(255, 0, 0,  ($i/20+0.5)) !important; // generates values from 0 to 0.95
+
+    // from dark to bright
+    background-color:  rgba(0, 0, 0, 1-($i/20+0.5)) !important; // generates values from 0.95 to 0
+  }
+}

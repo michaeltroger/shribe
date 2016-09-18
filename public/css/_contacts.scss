@@ -1,0 +1,96 @@
+$min-size: 100px;
+$button-size: 70%;
+$num: 50;
+@for $i from 0 to $num {
+  .importance#{$i} {
+    $value: 5 * $i + $min-size;
+    width: $value;
+    height: $value;
+    //bottom: 5 * $num + $min-size - $value;
+    //top: $value / 2;
+  }
+}
+
+#contacts {
+  text-align: center;
+  list-style: none;
+  li {
+    display: inline-block;
+    position: relative;
+    -moz-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+  }
+  button {
+    //display: inline-block;
+    width: $button-size;
+    height: $button-size;
+    //margin: (100% - $button-size) / 2;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: $shribe-color;
+    box-shadow: 0 0 3px gray;
+    cursor: pointer;
+    position: absolute;
+    top: (100% - $button-size) / 2;
+    left: (100% - $button-size) / 2;
+  }
+  /*
+  button:hover, p:hover + button {
+    background: $hover-color;
+    box-shadow: 0 0 5px gray;
+  }*/
+  button:not(:hover) {
+    -moz-transition: background-color .5s ease-in;
+    -o-transition: background-color .5s ease-in;
+    -webkit-transition: background-color .5s ease-in;
+    transition: background-color .5s ease-in;
+  }
+  p:hover + button {
+    -moz-transition: background-color 0s ease-in;
+    -o-transition: background-color 0s ease-in;
+    -webkit-transition: background-color 0s ease-in;
+    transition: background-color 0s ease-in;
+  }
+  p {
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 0 3px gray;
+    z-index: 1;
+    padding: 5%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .unseen p,
+  .gotNewMessage p {
+    font-weight: bold;
+  }
+  /*
+  .open button {
+    background: $hover-color;
+  }*/
+  .gotNewMessage button {
+    animation: puls;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes puls {
+  from {
+    width: $button-size;
+    height: $button-size;
+  }
+  to {
+    width: $button-size + 4%;
+    height: $button-size + 4%;
+  }
+}

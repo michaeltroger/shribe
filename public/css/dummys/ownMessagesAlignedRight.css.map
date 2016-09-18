@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,+CAAgD;EAC9C,UAAU,EAAE,KAAK",
+"sources": ["ownMessagesAlignedRight.scss"],
+"names": [],
+"file": "ownMessagesAlignedRight.css"
+}

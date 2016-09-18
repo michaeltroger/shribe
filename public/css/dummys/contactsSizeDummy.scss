@@ -1,0 +1,8 @@
+$num: 50;
+@for $i from 1 to $num {
+  .importance#{$i} {
+    width: 2em * $i !important;
+    height: 2em * $i !important;
+    line-height: 2em * $i / 2 !important;
+  }
+}

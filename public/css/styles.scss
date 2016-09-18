@@ -1,0 +1,33 @@
+/* general styles (for all pages) */
+@import url(https://fonts.googleapis.com/css?family=Jura:500);
+$shribe-color: #71BACC;
+$hover-color: #47747F;
+$shribe-foreground: #8DE9FF;
+$shribe-light: #DAF8FF;
+$shribe-dark: #6D7C7F;
+$shribe-font: 'Jura', sans-serif;
+
+body {
+  background-color: $shribe-light;
+  -moz-transition: background-color .5s ease-in;
+  -o-transition: background-color .5s ease-in;
+  -webkit-transition: background-color .5s ease-in;
+  transition: background-color .5s ease-in;
+}
+
+.shribe {
+  font-family: $shribe-font;
+  font-size: 130%;
+}
+
+a {
+  color: $shribe-color;
+}
+a:hover {
+  color: $hover-color;
+}
+
+.row {
+  box-shadow: 0 0 15px $shribe-color;
+  margin: 10vh 0;
+}

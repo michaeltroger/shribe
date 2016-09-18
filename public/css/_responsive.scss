@@ -1,0 +1,137 @@
+@media (max-width:991px) {
+
+ html {  // otherwise jumping of container, when contacts opening
+    overflow-y: scroll;
+  }
+  #userInfo {
+    padding-top:2px;
+    padding-bottom:2px;
+  }
+
+  #users {
+    min-height:inherit;
+    height:35px;
+  }
+
+  #users.open {
+    height: 80vh;
+  }
+
+  .contacts-btn {
+    float: right;
+    cursor: pointer;
+  }
+
+  .contacts-btn div {
+    position: absolute;
+    left: 100%;
+    top: 64%;
+    padding-right: 8px;
+    margin-top: -0.50em;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 200;
+    vertical-align: middle;
+    z-index: 99;
+  }
+
+  .contacts-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+    background: rgb(0,0,0);
+    z-index: 99;
+  }
+
+  .newMsgCounter {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    border-radius: 50%;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  #contacts-btn.newMsg .newMsgCounter {
+    display: block;
+  }
+
+  .contacts-btn {
+    display: block;
+  }
+
+  .row {
+    margin:2vh 0;
+  }
+
+  #contactsContainer {
+    display: none;
+  }
+
+  #contactsContainer.showMobile {
+    display: block;
+  }
+
+  #newContact {
+    z-index: 20;
+    display: none !important;
+  }
+
+  #newContact.showMobile {
+    display: block !important;
+  }
+
+  #users.open #newContact {
+    display: block !important;
+  }
+
+  #contacts {
+    margin-top:30px;
+  }
+
+  .cButton {
+   // margin-top:10px;
+   // margin-bottom:5px;
+  }
+
+  #newMsgButtons {
+    //text-align:left;
+    min-width: 290px;
+  }
+}
+
+@media (max-width:768px) {
+  #newContact label {
+    display: none;
+  }
+
+  #addcontactfield {
+    width: 126px;
+  }
+
+  #newMsgContainer {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .cButton {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .cButton img {
+    bottom: 11px;
+  }
+}

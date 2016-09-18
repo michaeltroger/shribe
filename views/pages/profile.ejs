@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Shribe</title>
+    <% include ../partials/head %> <!-- general meta data, css files -->
+    <link rel="stylesheet" href="files/css/chat.css">
+    <link rel="stylesheet" href="files/css/landing.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div id="landing">
+            <div id="landingContent">
+                <div class="page-header text-center">
+                    <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+                    <a href="/chat" class="btn btn-default btn-sm">Chat</a>
+                    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+                </div>
+
+                <!-- LOCAL INFORMATION -->
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <p>
+                    <strong>id</strong>: <%= user.iduser %><br>
+                    <strong>email</strong>: <%= user.email %><br>
+                    <strong>password</strong>: <%= user.password %>
+                </p>
+            </div>
+        </div>
+    </div> <!-- END ROW -->
+</div> <!-- END CONTAINER -->
+
+<footer>
+    <% include ../partials/footer %> <!-- jquery and general script file -->
+</footer>
+</div>
+</body>
+</html>

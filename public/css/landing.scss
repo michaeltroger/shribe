@@ -1,0 +1,34 @@
+$shribe-dark: #6D7C7F;
+
+.row {
+  display: table;
+  width: 100%;
+}
+
+#landing {
+  background-color: #FFFFFF;
+  min-height: 400px;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#landingContent {
+  display: inline-block;
+}
+
+h1 {
+  color: $shribe-dark;
+  font-size: 55px;
+  margin-top: 0;
+  img {
+    margin-top: -20px;
+    margin-right: -15px;
+  }
+}
+
+form {
+  margin: 20px 0;
+}

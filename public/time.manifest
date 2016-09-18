@@ -1,0 +1,36 @@
+CACHE MANIFEST
+CACHE:
+#icons
+/files/icons/date_icon.png
+/files/icons/emoticon_icon.png
+/files/icons/image_icon.png
+/files/icons/location_icon.png
+/files/icons/pencil_icon.png
+/files/icons/plus_icon.png
+
+#sounds
+/files/sounds/newmessage.mp3
+
+#emoticons
+/files/emoticons/cry.png
+/files/emoticons/frown.png
+/files/emoticons/laugh.png
+/files/emoticons/neutral.png
+/files/emoticons/smile.png
+
+#scripts
+/files/js/lib/bootstrap.min.js
+/files/js/lib/bootstrap-datetimepicker.min.js
+/files/js/lib/jquery.timeago.min.js
+/files/js/lib/jquery-2.1.3.js
+/files/js/lib/moment-with-locales.min.js
+/files/js/lib/socket.io-1.3.5.js
+/files/js/lib/sweetalert.min.js
+/files/js/lib/underscore-min.js
+
+NETWORK:
+*
+
+FALLBACK:
+
+# version 2

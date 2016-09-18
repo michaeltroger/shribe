@@ -1,0 +1,307 @@
+/* CHAT STYLES */
+@import url(https://fonts.googleapis.com/css?family=Jura:500);
+
+$shribe-color: #71BACC;
+$hover-color: #47747F;
+$shribe-foreground: #8DE9FF;
+$shribe-light: #DAF8FF;
+$shribe-dark: #6D7C7F;
+$topbar: 50px;
+$bottombar: 60px;
+
+.cButton {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: $shribe-color;
+  box-shadow: 0 0 3px gray;
+  cursor: pointer;
+  margin-bottom: -20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+.cButton:hover {
+  background: $hover-color;
+  box-shadow: 0 0 5px gray;
+}
+.cButton img {
+  position: absolute;
+  left: 13px;
+  bottom: 13px;
+}
+// letting file button look in bootstrap style
+.fileButton {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.fileButton input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  cursor: inherit;
+  display: block;
+}
+
+.online {
+  color: #4dc71f;
+  font-weight: 800;
+}
+
+#users,
+#conversation {
+  height: 80vh;
+  min-height: 400px;
+  position: relative;
+  display: block;
+}
+#users {
+  background-color: #fff;
+}
+#conversation {
+  background-color: #aaaaaa;
+  -moz-transition: background-color .5s ease-in;
+  -o-transition: background-color .5s ease-in;
+  -webkit-transition: background-color .5s ease-in;
+  transition: background-color .5s ease-in;
+}
+
+.contacts-btn {
+  display: none;
+}
+
+#contactsContainer,
+#convContainer {
+  overflow: auto;
+  position: absolute;
+  top: $topbar;
+  right: 0;
+  bottom: $bottombar;
+  left: 0;
+}
+
+#addcontactfield {
+  border-width: thin;
+  border-style: none none solid none;
+  border-color: #000;
+  background: none;
+  width: 160px;
+}
+
+#newContact,
+#newMsgContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px 20px;
+  height: $bottombar;
+}
+#newMsgContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#newContact {
+  display: none;
+}
+
+#userInfo,
+#convInfo,
+#userOptions,
+#convOptions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: $topbar;
+  background: #fff;
+  z-index: 10;
+  padding: 10px 20px;
+  p {
+    padding-top: 3px;
+  }
+  em {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+#userOptions, #convOptions {
+  display: none;
+}
+
+#convName {
+  float: left;
+  cursor: pointer;
+}
+#userName {
+  cursor: pointer;
+}
+
+.responsive-menu{
+  display: none;
+}
+
+.expand {
+  display: block !important;
+}
+
+#filterContainer {
+  float: right;
+}
+
+.btn-filter {
+  width: 100%;
+}
+
+#newMsgButtons {
+  text-align: center;
+}
+
+#keyInput {
+  width: 0;
+  border: none;
+  padding: 0;
+}
+
+.close {
+  float: left;
+}
+
+.back {
+  left: 0;
+  width: 10%;
+}
+
+#sendText,
+#sendEmoticon,
+#sendLocation,
+#sendEvent {
+  position: relative;
+  height: 100%;
+}
+
+#m {
+  width: 68%;
+  resize: none;
+  left: 11%;
+  padding: 5px;
+}
+
+#textBtn {
+  right: 0;
+  width: 20%;
+}
+
+#emoticons {
+  position: absolute;
+  right: 0;
+  width: 89%;
+  height: 100%;
+  overflow: auto;
+  padding-left: 10px;
+}
+
+// style of the choosable emoticons
+#emoticons .emoticon {
+  height: 50px;
+  cursor: pointer;
+}
+
+#address {
+  left: 11%;
+  width: 42%;
+  padding-left: 5px;
+}
+
+#addressBtn {
+  left: 54%;
+  width: 20%;
+}
+
+#locationBtn {
+  right: 0;
+  width: 25%;
+}
+
+#sendEvent {
+  padding-left: 11%;
+}
+
+#datetimepicker {
+  left: 11%;
+  width: 10%;
+  color: grey;
+  padding-left: 12%;
+  cursor: pointer;
+  background: #fff url("../icons/date_icon.png") no-repeat center;
+  border: none;
+  box-shadow: 0 0 2px grey;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+#eventdescription {
+  left: 22%;
+  width: 57%;
+  padding-left: 5px;
+}
+
+#eventBtn {
+  right: 0;
+  width: 20%;
+}
+
+
+.back,
+#m,
+#textBtn,
+#address,
+#addressBtn,
+#locationBtn,
+#eventdescription,
+#eventBtn {
+  background: #fff none;
+  border: none;
+  box-shadow: 0 0 2px grey;
+  position: absolute;
+  top: 0;
+  height: 100%; //
+}
+
+.sweet-alert {
+  border-radius:0;
+  .confirm {
+    background-color:$shribe-color !important;
+    &:hover {
+      background-color:$hover-color !important;
+    }
+  }
+}
+
+@function addhash($input) {
+  @return unquote("#" + $input);
+}
+
+$convColors: 47747F, 3CB371, E9967A, FFE4B5, FFC0CB, F4A460, DDA0DD, 90EE90, FFF0F5, F0E68C;
+@each $color in $convColors {
+  #c#{$color},
+  #contacts .c#{$color} button:hover,
+  #contacts .c#{$color} p:hover + button,
+  #contacts .c#{$color}.open button,
+  #conversation.c#{$color} {
+    background-color: addhash($color);//
+  }
+}
+
+@import "messages";
+@import "contacts";
+@import "responsive";

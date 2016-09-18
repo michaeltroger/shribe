@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACb,gBAAgB,EAAE,gCAAgC",
+"sources": ["backgroundImageDummy.scss"],
+"names": [],
+"file": "backgroundImageDummy.css"
+}

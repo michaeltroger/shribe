@@ -1,0 +1,167 @@
+#messages {
+  list-style: none;
+  margin: 0;
+}
+
+#convHeader {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  p, a {
+    display: block;
+    padding: 50px 0;
+  }
+  p { color: $shribe-light; }
+  h1 {
+    color: $shribe-light;
+    padding: 100px 0;
+  }
+}
+
+.msgHeader {
+  background-color: #fff;
+  border-bottom: 4px solid $shribe-light;
+  box-shadow: 0 0 3px gray;
+  color: $shribe-dark;
+  padding: 5px;
+  cursor: pointer;
+  width: 20%;
+  display: inline-block;
+}
+
+.contentHeader {
+  position: absolute;
+  left: 10px;
+  color: #fff;
+}
+.partner .contentHeader { color: #000; }
+
+.message {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 10px;
+  ul {
+    list-style: none;
+  }
+  li {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  li:last-of-type {
+    margin: 0;
+    padding-bottom: 35px;
+  }
+  li.image:last-of-type, {
+    padding-bottom: 10px;
+  }
+  .textContent {
+    background-color: #fff;
+    display: inline-block;
+    padding: 3px 8px;
+    text-align: left;
+    max-width: 65%;
+    margin: 0;
+    word-wrap: break-word;
+  }
+  .textContent.short {
+    font-size: 20px;
+    padding: 5px 15px;
+  }
+  .image img {
+    max-width: 90%;
+    max-height: 1000px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+  }
+  .event div {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 3px gray;
+  }
+  .date {
+    background-color: $shribe-dark;
+    color: #fff;
+    padding: 2px 5px;
+    margin: 0;
+  }
+  .datedescription {
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+    max-width: 200px;
+    overflow: auto;
+  }
+  .emoticon {
+    padding: 10px 0;
+  }
+}
+
+.preview {
+  display: inline-block;
+  width: 80%;
+  cursor: pointer;
+  background-position: center;
+  position: absolute;
+  padding-top: 5px;
+  height: 34px;
+  overflow: hidden;
+  p {
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 5px;
+  }
+  .locIcon,
+  .imgIcon {
+    display: none;
+    margin-left: 10px;
+    margin-top: -5px;
+  }
+  .emoPreview {
+    height: 25px;
+    margin-left: 10px;
+  }
+  .date {
+    background-color: $shribe-color;
+    box-shadow: 0 0 3px gray;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: -1px;
+  }
+}
+.previewEvent {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  p { margin-left: 30px; }
+  img {
+    position: absolute;
+    top: -6px;
+  }
+}
+
+.message.location .locIcon,
+.message.image .imgIcon {
+  display: inline;
+}
+
+.partner {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+// google maps style
+.map_div {
+  width: 70%;
+  margin-left: 15%;
+  height: 200px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 3px gray;
+}
+
+@for $i from -10 to 11 {
+  $value: ($i + 10) * 12.75;
+  .mood#{$i} {
+    background-color: rgb($value, $value, $value) !important;
+  }
+}

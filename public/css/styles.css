@@ -1,0 +1,24 @@
+/* general styles (for all pages) */
+@import url(https://fonts.googleapis.com/css?family=Jura:500);
+body {
+  background-color: #DAF8FF;
+  -moz-transition: background-color .5s ease-in;
+  -o-transition: background-color .5s ease-in;
+  -webkit-transition: background-color .5s ease-in;
+  transition: background-color .5s ease-in; }
+
+.shribe {
+  font-family: "Jura", sans-serif;
+  font-size: 130%; }
+
+a {
+  color: #71BACC; }
+
+a:hover {
+  color: #47747F; }
+
+.row {
+  box-shadow: 0 0 15px #71BACC;
+  margin: 10vh 0; }
+
+/*# sourceMappingURL=styles.css.map */

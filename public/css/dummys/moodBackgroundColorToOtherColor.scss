@@ -1,0 +1,11 @@
+#users, #conversation {
+  color:white;
+}
+
+$num: 10;
+@for $i from -10 to $num {
+  .mood#{$i} {
+
+    background-color: rgb(1- ($i*13+130), 100, ($i*13+130)) !important; // generates values from 0 to 247
+  }
+}
