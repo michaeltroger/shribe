@@ -1,9 +1,9 @@
-#Shribe - an interactive text chat using WebSockets
+# Shribe - an interactive text chat using WebSockets
 ## based on Node.js, Socket.io and MySQL
 
 A project by Valentin Kuba, Sebastian Schmid & Michael Troger.
 
-###Installation: 
+### Installation: 
 1. `npm install`
 2. Setup your database and link it in a file called `config/database.js` like:
     ```
@@ -34,5 +34,5 @@ A project by Valentin Kuba, Sebastian Schmid & Michael Troger.
     };
     ```
 
-###Launch: 
+### Launch: 
 `npm start`
